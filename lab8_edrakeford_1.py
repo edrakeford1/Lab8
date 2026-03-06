@@ -40,4 +40,10 @@ print(f"The provided check digit is '" +last_digit+ "'")
 print("\nCaluculating...")
 
 expected_digit = find_UPC(first_11_digits)
-print("The expected check digit is", expected_digit, ".")
+print(f"The expected check digit is" ,expected_digit, ".")
+
+# valid or invalid UPC
+if int(last_digit) == expected_digit:
+    print("\nThis is a VALID UPC")
+else:
+    print("\nThis is an INVALID UPC")
